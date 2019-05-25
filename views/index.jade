@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  table.table.table-dark
+        thead
+            tr
+                td Service Name
+                td Service Status
+                td Action
+        tbody
+            each homeBrewService in homeBrewServices
+                td= homeBrewService.name
+                td(id='td'+homeBrewService.name)= homeBrewService.status
+                td
+                    if homeBrewService.status == 'stopped'
+                        a(href='/start/'+homeBrewService.name) START
+                    else
+                        a(href='/stop/'+homeBrewService.name) STOP

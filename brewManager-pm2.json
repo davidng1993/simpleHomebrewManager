@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "brewManager",
+            "script": "npm",
+            "args" : "start"
+        }
+    ]
+}
