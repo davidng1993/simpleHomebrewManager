@@ -11,7 +11,8 @@ Simple Homebrew Manager for list, start, stop the services
 5. Check the node service is started : pm2 list
 6. Run url: http://localhost:13010/ in your browser.
 7. Run pm2 start/stop brewManager to manage the node service.
-8. Using pm2 to manage simpleHomebrewManager as you like. 
+8. Using pm2 to manage simpleHomebrewManager as you like.
+9. Please remember to block the incoming connection for the 13010 port.
 ```
 
 ## Usage

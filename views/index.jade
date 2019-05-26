@@ -10,6 +10,7 @@ block content
                 td Action
         tbody
             each homeBrewService in homeBrewServices
+                tr
                 td= homeBrewService.name
                 td(id='td'+homeBrewService.name)= homeBrewService.status
                 td
